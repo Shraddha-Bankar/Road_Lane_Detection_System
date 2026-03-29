@@ -1,6 +1,6 @@
 # 📌 Road Lane Detection System
 
-## Author(s)
+## Author
 Shraddha Bankar  
 
 ## Affiliation
