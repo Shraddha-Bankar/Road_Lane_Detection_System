@@ -1,61 +1,57 @@
-# 📌 Road Lane Detection System
+# 📌 Road Lane Detection System  
 
-## Author
+## 👩‍💻 Author  
 Shraddha Bankar  
 
-## Affiliation
+## 🏫 Affiliation  
 Computer Science Engineering (Data Science)  
 
-## Date
+## 📅 Date  
 March 2026  
 
 ---
 
 ## 📖 Abstract  
-This project presents a Road Lane Detection System designed to identify lane markings on roads using computer vision techniques. Lane detection plays a crucial role in advanced driver assistance systems (ADAS) and autonomous vehicles by ensuring safe navigation and reducing accidents.  
+This project focuses on detecting road lanes using computer vision techniques. It takes images or video as input and identifies lane lines to help in safe driving.  
 
-The system processes input images or video frames, applies image preprocessing techniques such as grayscale conversion, edge detection, and region masking, and then detects lane lines using algorithms like Hough Transform. The detected lanes are highlighted on the original image for clear visualization.  
-
-The results show that the system can accurately detect lane boundaries under normal road conditions. This project demonstrates how computer vision can be effectively used in real-time applications for improving road safety and assisting drivers.  
+Basic image processing methods like edge detection and Hough Transform are used to highlight lanes. This system can be useful in driver assistance and road safety applications.  
 
 ---
 
 ## 📘 Introduction  
-Road safety is a major concern due to the increasing number of vehicles and accidents. One of the key challenges in driving is maintaining the correct lane, especially in highways and crowded areas.  
+Road accidents are increasing, and maintaining the correct lane is very important for safe driving.  
 
-The objective of this project is to develop a system that can automatically detect road lanes from images or video streams. The system helps drivers stay within their lane and can also be used in autonomous driving systems.  
-
-This project is important because it contributes to safer driving by providing real-time lane detection and reducing the chances of accidents caused by lane deviation.  
+The goal of this project is to build a system that can automatically detect lanes from images or videos. It helps drivers stay in their lane and can also be used in self-driving systems.  
 
 ---
 
-## 📚 Literature Review   
-Lane detection has been widely studied in the field of computer vision. Traditional methods use edge detection techniques like Canny Edge Detection and Hough Transform for line detection.  
+## 📚 Literature Review  
+Lane detection is an important part of computer vision.  
 
-Recent approaches use deep learning models such as Convolutional Neural Networks (CNNs) for more accurate lane detection under complex conditions.  
-
-However, traditional methods are still widely used due to their simplicity and efficiency. This project uses classical computer vision techniques to build a reliable and easy-to-implement lane detection system.  
+Traditional methods like Canny Edge Detection and Hough Transform are simple and widely used. New methods use deep learning for better accuracy, but this project uses basic techniques for simplicity and efficiency.  
 
 ---
 
 ## ⚙️ Methodology  
-The system takes input images or video frames and processes them step by step. First, the image is converted to grayscale to simplify processing. Then, noise is reduced using Gaussian blur. Edge detection is applied using the Canny algorithm to identify important edges.  
-
-A region of interest is selected to focus only on the road area. After that, the Hough Transform is used to detect straight lines representing lane boundaries. Finally, the detected lane lines are drawn on the original image for visualization.  
+- Convert image to grayscale  
+- Apply Gaussian blur to reduce noise  
+- Detect edges using Canny  
+- Select road region (ROI)  
+- Detect lines using Hough Transform  
+- Draw lane lines on original image  
 
 ---
 
 ## 💻 Implementation  
 
-**Programming Language**  
-- Python  
+**Language:** Python  
 
-**Frameworks / Libraries**  
+**Libraries:**  
 - OpenCV  
 - NumPy  
 - Matplotlib  
 
-**Tools Used**  
+**Tools:**  
 - Jupyter Notebook  
 - VS Code  
 - Google Colab  
@@ -63,41 +59,37 @@ A region of interest is selected to focus only on the road area. After that, the
 
 ---
 
-## 📊 Results and Discussion  
-The system successfully detects lane lines in road images and video streams under normal conditions.  
+## 📊 Results  
+The system can detect lane lines clearly in normal road conditions.  
 
-It performs well on clear roads with visible lane markings. The output shows highlighted lane lines over the original image, making it easier for drivers to understand lane positions.  
-
-However, performance may decrease in challenging conditions such as poor lighting, shadows, or unclear lane markings.  
+It works well when lane markings are visible, but performance may reduce in low light or unclear roads.  
 
 ---
 
-## ⚠️ Limitation  
-- Performance decreases in low-light or rainy conditions  
-- Difficulty in detecting faded or unclear lane markings  
-- Cannot handle curved lanes effectively in all cases  
-- Not suitable for highly complex road environments  
+## ⚠️ Limitations  
+- Poor performance in low light or rain  
+- Difficulty with faded lane markings  
+- Limited handling of curved lanes  
 
 ---
 
 ## 🚀 Future Scope  
-- Use deep learning models for better accuracy  
-- Improve detection in night and bad weather conditions  
-- Detect curved lanes more effectively  
-- Integrate with real-time driving systems  
-- Combine with object detection for advanced safety systems  
+- Use deep learning for better accuracy  
+- Improve detection in difficult conditions  
+- Handle curved lanes better  
+- Integrate with real-time systems  
 
 ---
 
 ## ✅ Conclusion  
-This project demonstrates how computer vision techniques can be used to detect road lanes effectively.  
+This project shows how computer vision can be used for lane detection.  
 
-The system provides a simple and efficient solution for lane detection, which can be useful in driver assistance systems. With further improvements, it can be applied in real-world autonomous driving applications.  
+It is a simple and useful system that can help improve road safety and assist drivers.  
 
 ---
 
 ## 📎 References  
-[1] "Lane Detection Using Computer Vision," Journal, 2020  
-[2] "Advanced Driver Assistance Systems," 2019  
-[3] https://opencv.org/  
-[4] https://www.kaggle.com/  
+1. Lane Detection Using Computer Vision (2020)  
+2. Advanced Driver Assistance Systems (2019)  
+3. https://opencv.org/  
+4. https://www.kaggle.com/  
