@@ -1,0 +1,6 @@
+streamlit
+opencv-python-headless==4.13.0.92
+moviepy==2.2.1
+numpy==2.4.6
+imageio==2.37.3
+imageio-ffmpeg==0.6.0
