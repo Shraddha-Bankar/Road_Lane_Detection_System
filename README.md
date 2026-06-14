@@ -1,95 +1,62 @@
-# Road Lane Detection System  
+# Lane Line Detection Streamlit App
 
-## Author  
-Shraddha Bankar  
+This is a Streamlit web application that performs real-time lane line detection on uploaded video files. It utilizes OpenCV for image processing and MoviePy for video handling.
 
-## Affiliation  
-Computer Science Engineering (Data Science)  
+## Features
 
-## Date  
-March 2026  
+*   **Upload Video**: Users can upload MP4 video files.
+*   **Lane Detection Pipeline**: The app processes each frame of the video to detect and highlight lane lines using a pipeline that includes:
+    *   Color masking (for white and yellow lines)
+    *   Grayscale conversion
+    *   Gaussian blurring
+    *   Canny edge detection
+    *   Region of interest masking
+    *   Hough transform for line detection
+    *   Line extrapolation and smoothing
+*   **Processed Video Output**: Displays the video with detected lane lines overlaid.
+*   **Robust File Handling**: Uses `tempfile` to securely handle uploaded video files, making it suitable for cloud deployment.
 
----
+## How to Run Locally
 
-## Abstract  
-This project focuses on detecting road lanes using computer vision techniques. It takes images or video as input and identifies lane lines to help in safe driving.  
+1.  **Clone the repository** (once you have these files in a GitHub repo):
+    ```bash
+    git clone <your-repo-url>
+    cd <your-repo-name>
+    ```
+2.  **Create a virtual environment** (recommended):
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+    ```
+3.  **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Run the Streamlit app**:
+    ```bash
+    streamlit run streamlit_app.py
+    ```
 
-Basic image processing methods like edge detection and Hough Transform are used to highlight lanes. This system can be useful in driver assistance and road safety applications.  
+    This will open the application in your web browser.
 
----
+## Deployment to Streamlit Community Cloud
 
-## Introduction  
-Road accidents are increasing, and maintaining the correct lane is very important for safe driving.  
+1.  **Push your project to GitHub**: Ensure all necessary files (`streamlit_app.py`, `requirements.txt`, `README.md`, `.gitignore`) are in a GitHub repository.
+2.  **Go to Streamlit Community Cloud**: Visit [share.streamlit.io](https://share.streamlit.io/) and log in with your GitHub account.
+3.  **Deploy a new app**: Click "New app" and select your repository, branch, and `streamlit_app.py` as the main file path. Click "Deploy!"
 
-The goal of this project is to build a system that can automatically detect lanes from images or videos. It helps drivers stay in their lane and can also be used in self-driving systems.  
+Your app will be built and deployed, and you'll get a URL to access it.
 
----
+## File Structure for Deployment
 
-## Literature Review  
-Lane detection is an important part of computer vision.  
+Your GitHub repository should have a structure similar to this:
 
-Traditional methods like Canny Edge Detection and Hough Transform are simple and widely used. New methods use deep learning for better accuracy, but this project uses basic techniques for simplicity and efficiency.  
+```
+your-repo-name/
+├── streamlit_app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
----
-
-## Methodology  
-- Convert image to grayscale  
-- Apply Gaussian blur to reduce noise  
-- Detect edges using Canny  
-- Select road region (ROI)  
-- Detect lines using Hough Transform  
-- Draw lane lines on original image  
-
----
-
-## Implementation  
-
-**Language:** Python  
-
-**Libraries:**  
-- OpenCV  
-- NumPy  
-- Matplotlib  
-
-**Tools:**  
-- Jupyter Notebook  
-- VS Code  
-- Google Colab  
-- GitHub  
-
----
-
-## Results  
-The system can detect lane lines clearly in normal road conditions.  
-
-It works well when lane markings are visible, but performance may reduce in low light or unclear roads.  
-
----
-
-## Limitations  
-- Poor performance in low light or rain  
-- Difficulty with faded lane markings  
-- Limited handling of curved lanes  
-
----
-
-## Future Scope  
-- Use deep learning for better accuracy  
-- Improve detection in difficult conditions  
-- Handle curved lanes better  
-- Integrate with real-time systems  
-
----
-
-## Conclusion  
-This project shows how computer vision can be used for lane detection.  
-
-It is a simple and useful system that can help improve road safety and assist drivers.  
-
----
-
-## References  
-1. Lane Detection Using Computer Vision (2020)  
-2. Advanced Driver Assistance Systems (2019)  
-3. https://opencv.org/  
-4. https://www.kaggle.com/  
+Make sure `streamlit_app.py` is in the root directory or adjust the "Main file path" setting during deployment accordingly.
