@@ -1,0 +1,6 @@
+streamlit
+opencv-python-headless
+moviepy
+numpy
+imageio
+imageio-ffmpeg
