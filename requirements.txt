@@ -1,6 +1,0 @@
-streamlit
-opencv-python
-moviepy
-numpy
-imageio
-imageio-ffmpeg
